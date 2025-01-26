@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClInclude Include="equation.h" />
     <ClInclude Include="line_equation.h" />
+    <ClInclude Include="negative_D.h" />
     <ClInclude Include="square_equation.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="equation.cpp" />
     <ClCompile Include="line_equation.cpp" />
+    <ClCompile Include="negative_D.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="square_equation.cpp" />
   </ItemGroup>

@@ -10,11 +10,22 @@ int main()
 
 	square_equation equation_2{ 1, 7, 10 };
 
-	equation_1.root_equation();
+	try
+	{
 
-	cout << "\n";
+		equation_1.root_equation();
 
-	equation_2.root_equation();
+		cout << equation_1.get_root() << "\n";
+
+		equation_2.root_equation();
+
+		cout << equation_2.get_x().first << equation_2.get_x().second;
+
+	}
+	catch (const negative_D& D)
+	{
+		cout << D.what();
+	}
 
 	return 0;
 }

@@ -2,10 +2,7 @@
 
 void square_equation::root_equation()noexcept
 {
-    if (b * b - 4 * a * c >= 0)
-    {
-        x = (-b + sqrt(b * b - 4 * a * c)) / 2 * a;
-        x_2 = (-b - sqrt(b * b - 4 * a * c)) / 2 * a;
-        cout << x << ' ' << x_2;
-    }
+    if (b * b - 4 * a * c < 0) throw negative_D("дискриминант отрицательный, корней нет");
+       x.first = (-b + sqrt(b * b - 4 * a * c)) / 2 * a;
+       x.second = (-b - sqrt(b * b - 4 * a * c)) / 2 * a;
 }
